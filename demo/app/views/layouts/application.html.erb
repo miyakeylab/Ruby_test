@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
-    <title>Demo</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    	<meta charset="UTF-8">
+      <title>RailsSample</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    	<link rel="stylesheet" href="css/style.css">
+    	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <%= csrf_meta_tags %>
+    
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+  <header class="header bg-primary">
+  	<h1 class="site-title">在庫管理システム</h1>
+  	<%= link_to "新規登録",new_blog_path,{class:"btn-warning btn-new"} %>
+  </header>    
+    
     <%= yield %>
   </body>
 </html>

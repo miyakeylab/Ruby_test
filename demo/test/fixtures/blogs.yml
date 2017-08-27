@@ -2,8 +2,12 @@
 
 one:
   title: MyString
-  content: MyText
+  price: 1
+  amount: 1
+  description: MyText
 
 two:
   title: MyString
-  content: MyText
+  price: 1
+  amount: 1
+  description: MyText
